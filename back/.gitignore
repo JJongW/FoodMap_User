@@ -5,3 +5,5 @@ log/*
 .DS_Store
 SSREADME.md
 config/secret.js
+.env
+.gitignore
