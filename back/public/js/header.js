@@ -13,6 +13,7 @@
 */
 
 // 1. 로컬스토리지에서 x-access-token 확인
+let url = "http://localhost:3000";
 const jwt = localStorage.getItem("x-access-token");
 setHeader(jwt);
 

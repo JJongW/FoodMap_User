@@ -35,6 +35,7 @@ async function signIn(event) {
   const isValidSignIn = signInReturn.data.code == 200;
 
   if (!isValidSignIn) {
+    console.log(signInReturn.data)
     return alert("요청에 문제가 생겼습니다.");
   }
 
@@ -43,5 +44,5 @@ async function signIn(event) {
   localStorage.setItem("x-access-token", jwt);
   alert(signInReturn.data.message);
 
-  return location.replace("../../views/main/index.html");
+  return location.replace("/main/index.html");
 }

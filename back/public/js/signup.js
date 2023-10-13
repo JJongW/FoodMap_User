@@ -8,7 +8,6 @@
 5. 요청이 성공하면, jwt를 localstorage에 저장하고 main page 이동
 
 */
-
 const btnSignUp = document.querySelector("#signup");
 
 // 1. #signup 클릭
@@ -54,5 +53,5 @@ async function signup(event) {
   localStorage.setItem("x-access-token", jwt);
   alert(signUpReturn.data.message);
 
-  return location.replace("../../views/main/index.html");
+  return location.replace("/main/index.html");
 }
